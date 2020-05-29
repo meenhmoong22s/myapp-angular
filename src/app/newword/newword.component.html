@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="wellcome">
+        <h2 [hidden]="forgot">Wellcome to my Page, I'm Phong Nguyễn Thanh</h2>
+        <button (click)="forgot = !forgot" type="button" class="btn btn-outline-primary">Click Wellcome </button>
+    </div>
+
+    <div class="imgEnglish">
+        <div>
+            <h2>Learn {{en}}</h2>
+        </div>
+        <div class="img-Url">
+            <div><img src='{{imgUrl}}' alt='' class="img-Url-0"></div>
+            <div class="img-Url-12">
+                <img [src]='imgUrl1' alt='' class="img-Url-1">
+                <img [src]='imgUrl2' alt='' class="img-Url-2">
+            </div>
+        </div>
+    </div>
+    <div class="addWord">
+        <div class="add-select">
+            <div class="formInput">
+                <div *ngIf="isShowFrom">
+                    <input placeholder="English" [(ngModel)]="newEn" />
+                    <input placeholder="VietNamese" [(ngModel)]="newVn" />
+                    <br>
+                    <button (click)="addWord()" type="button" class="btn btn-primary">Add new word</button>
+                    <br>
+                </div>
+                <button (click)="isShowFrom = true" *ngIf="!isShowFrom" type="button" class="btn btn-primary">Add new
+                    word</button>
+            </div>
+            <div class="selectForm">
+                <select [(ngModel)]="filterStatus">
+                    <option value="XEM_TAT_CA">Show All</option>
+                    <option value="XEM_GREEN">Show Word Green</option>
+                    <option value="XEM_RED">Show Word Red</option>
+                </select>
+            </div>
+        </div>
+        <div class="showForm">
+            <div *ngFor="let word of arrWords">
+                <div *ngIf="getShowStatus(word.memorized)">
+                    <h4 [ngStyle]="{color: word.memorized ? 'green':'red'}">{{word.en}}</h4>
+                    <p>{{word.vn}}</p>
+                    <button (click)="removeWord(word.id)" type="button" class="btn btn-outline-primary">remove</button>
+                    <button class="btnchange" (click)="word.memorized = !word.memorized" type="button"
+                        class="btn btn-outline-primary">{{word.memorized ? 'Red' : 'Green'}}</button>
+                </div>
+            </div>
+        </div>
+
+    </div>

@@ -1,0 +1,18 @@
+<div class="col-sm-12">
+    <form (ngSubmit)="onSubmit()" [formGroup]="formLogin">
+        <label>Email</label> <br>
+        <input required placeholder="email" formControlName="email">
+        <br>
+        <span *ngIf="formLogin.get('email').invalid && 
+                    formLogin.get('email').touched " class="error">
+            Email field is required
+        </span>
+        <br>
+        <label>Password</label> <br>
+        <input required type="password" placeholder="password" formControlName="password">
+        <br>
+        <label><input type="checkbox" formControlName="re">remember login</label>
+        <br>
+        <button [disabled]="formLogin.invalid" type="submit" class="btn btn-outline-primary">submit</button>
+    </form>
+</div>

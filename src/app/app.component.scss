@@ -1,0 +1,19 @@
+
+.container{
+    .content{
+        .routing{
+           display: flex;
+           justify-content: space-between;
+        }
+        .outlet{
+            margin: auto;
+        }
+        .carousel{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1px;
+        }
+    }
+}

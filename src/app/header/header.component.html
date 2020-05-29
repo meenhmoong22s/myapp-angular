@@ -1,0 +1,84 @@
+<div class="container">
+    <ul ngbNav #nav="ngbNav" [activeId]="2" class="nav-tabs justify-content-center">
+        <li [ngbNavItem]="1">
+            <a ngbNavLink>I Always Dreamed</a>
+            <ng-template ngbNavContent>
+                <p>I can feel you through my skin. You are the one who dictates my feelings, the one who knows all my
+                    fears, and the one
+                    who makes me recognize that I like this man next to me. But what you don’t quite understand is that
+                    in this reality you
+                    are not the only one who dictates things and whether you like it or not, you have to understand that
+                    for things to work
+                    you have to go in sync with another heart to create the most beautiful melody. We have been through
+                    this all our life
+                    and we still don't understand each other. You say white and I say black. I say that it is impossible
+                    and you insist on
+                    continuing without sometimes realizing that you are hurting me. In the end, we hurt each other
+                    because I am you and you
+                    are me. I hurt you because I do not dare to make your wishes come true and you hurt me because you
+                    don't accept my lack
+                    of character. Sometimes I think you had bad luck when you choose me as your owner, but then I think
+                    that it was not our
+                    choice at all, it was a matter of destiny or chance. One thing I am sure of is that because of our
+                    history together,
+                    this man beside us will never feel the same way. For the same reason I am warning you to prepare
+                    yourself to listen and
+                    feel me cry because no matter how much I try to tell you not to fall in love again you decided to do
+                    it again, you
+                    decided that you would feel again what it is to have an unrequired love.</p>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+            <a ngbNavLink><b>The Next</b> story</a>
+            <ng-template ngbNavContent>
+                <p>It's 11:11 am in Mrs. Cecilia's coffee house. And while I drink the best cappuccino in town I am
+                    making a wish just like
+                    every time I am lucky to look at the clock when its 11:11. I know it sounds cheesy and somewhat
+                    stupid but I've been
+                    doing it for a long time and although nothing comes true, just looking at the clock at that time
+                    gives me hope that
+                    something good is going to happen today. It is Tuesday my only day off of the week and if you are
+                    wondering what my job
+                    is, you only need to know that it consists of deciphering letters and counting pills. Don't
+                    misunderstand me I love my
+                    job; I earn good money, I can take trips, buy goodies to my dogs and have the house of my dreams.
+                    But with everything
+                    and that I need days like today to recharge batteries and what better than to do it with a cup of
+                    coffee, a good cake,
+                    and a novel by Nicole Jacquelyn.</p>
+            </ng-template>
+        </li>
+        <li ngbDropdown class="nav-item">
+            <a href (click)="false" class="nav-link" ngbDropdownToggle>Dropdown</a>
+            <div ngbDropdownMenu>
+                <button ngbDropdownItem>Action</button>
+                <button ngbDropdownItem>Another action</button>
+                <button ngbDropdownItem>Something else here</button>
+                <div class="dropdown-divider"></div>
+                <button ngbDropdownItem>Separated link</button>
+            </div>
+        </li>
+        <li ngbNavItem [disabled]="false" class="ml-auto">
+            <a ngbNavLink>END story</a>
+            <ng-template ngbNavContent>
+                <p>Sitting at the corner table like every day that I come to the coffee house, the person who lately
+                    owns all my dreams
+                    enters through the door. His name is Andrew. And how do I know that?: well, the first and only day
+                    that he sat down next
+                    to me, I unintentionally spilled my cup of coffee all over him. Since then, every time we meet we
+                    make a gesture of
+                    greeting but nothing more. We don't talk at all. And despite that my heart has decided that he would
+                    be the possessor of
+                    my fantasies from now on. Today as every day Andrés orders an espresso cup with a corn cake. - Help
+                    me God I know what
+                    he orders, this is crazy- (I say in my mind). I take a deep breath and try to focus again on the
+                    task of continuing to
+                    read the book I have on my cell phone. It is at that moment that something strange happens,
+                    something that I was not
+                    prepared for.</p>
+            </ng-template>
+        </li>
+    </ul>
+
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>

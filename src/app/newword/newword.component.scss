@@ -1,0 +1,52 @@
+.container{
+    .wellcome{
+        margin: 16px auto;
+    }
+    .imgEnglish{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .img-Url{
+            width: 900px;
+            display: flex;
+            
+            .img-Url-0{
+                flex:1;
+                width: 450px;
+            }
+            .img-Url-12{
+                width: 450px;
+                display: flex;
+                flex-direction: column;
+                flex:1
+                
+            }
+            .img-Url-1{
+                    width: 100%;
+                    height: 225px;
+                }
+            .img-Url-2{
+                    width: 100%;
+                    height: 225px;
+                }
+        }
+    }
+    .addWord{
+        
+        .add-select{
+            display: flex;
+            .formInput{
+
+            }
+            .selectForm{
+
+            }
+        }
+        .showForm{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}

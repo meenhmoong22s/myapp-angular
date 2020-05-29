@@ -1,0 +1,9 @@
+<h3>Call Post API</h3>
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <input required type="text" name="name" ngModel placeholder="name"><br><br>
+    <input required type="text" name="address" ngModel placeholder="address"><br><br>
+    <input required type="text" name="email" ngModel placeholder="email"><br><br>
+    <input required type="text" name="rating" ngModel placeholder="rating"><br><br>
+    <button [disabled]="userPost.invalid" type="submit" class="btn btn-outline-primary">submit data</button>
+</form>
+<p>{{kq | json}}</p>
