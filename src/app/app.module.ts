@@ -17,6 +17,8 @@ import { WeatherComponent } from './weather/weather.component';
 import { PostApiComponent } from './post-api/post-api.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { CallapiComponent } from './callapi/callapi.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AddbootstrapComponent } from './addbootstrap/addbootstrap.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { CallapiComponent } from './callapi/callapi.component';
     PostApiComponent,
     NotfoundComponent,
     CallapiComponent,
+    PageNotFoundComponent,
+    AddbootstrapComponent,
   ],
   imports: [
     BrowserModule,

@@ -33,7 +33,7 @@
         }
     }
     .addWord{
-        
+        margin: 16px;
         .add-select{
             display: flex;
             .formInput{
@@ -50,3 +50,16 @@
         }
     }
 }
+/* max-width: 739px = 46.1875em */
+@media ( max-width: 739px){
+    /* mobile : width < 740px*/
+    .imgEnglish{
+        h2{
+            margin: auto;
+        }
+        flex-direction: row;
+        .img-Url{
+            flex-direction: column;
+        }
+    }
+};

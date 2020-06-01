@@ -1,3 +1,4 @@
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CallapiComponent } from './callapi/callapi.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { PostApiComponent } from './post-api/post-api.component';
@@ -12,8 +13,8 @@ const routes: Routes = [
   { path: 'todogetapi', component: CallapiComponent },
   { path: 'todoweather', component: WeatherComponent },
   { path: 'todopostapi', component: PostApiComponent },
-  { path: '', redirectTo: '/#', pathMatch: 'full' }
-  // { path: '**', component: NotfoundComponent }
+  { path: '', redirectTo: '/todologin', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 
 ];
 
