@@ -12,9 +12,9 @@ const routes: Routes = [
   { path: 'todologin', component: LoginComponent },
   { path: 'todogetapi', component: CallapiComponent },
   { path: 'todoweather', component: WeatherComponent },
-  { path: 'todopostapi', component: PostApiComponent },
-  { path: '', redirectTo: '/todologin', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent }
+  { path: 'todopostapi', component: PostApiComponent }
+  // { path: '', redirectTo: '/todologin', pathMatch: 'full' },
+  // { path: '**', component: PageNotFoundComponent }
 
 ];
 
